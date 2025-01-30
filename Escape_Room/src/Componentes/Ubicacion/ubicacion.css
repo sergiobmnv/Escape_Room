@@ -8,8 +8,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: auto;
   width: auto;
-  margin-top:60px;
-  opacity: 0;
   transform: translateY(20px);
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -71,7 +69,7 @@
   background-position: center; /* Centra el logo */
   background-repeat: no-repeat; /* No repite el logo */
   background-blend-mode: multiply; /* Mezcla el color de fondo con la imagen */
-  margin-left: 2%;
+  margin-left: 3%;
 }
 
 .whatsapp-card:hover {
