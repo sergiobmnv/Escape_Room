@@ -1,0 +1,175 @@
+/* Contenedor de las tarjetas */
+.flip-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #282c34;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .flip-card-title {
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 2.8rem; /* Tamaño de fuente del título */
+    color: #ffffff; /* Color del texto */
+    border-bottom: 2px solid #1da1f2;
+    margin-top: 50px;
+  }
+  
+  .flip-card-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .flip-card-container.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Tarjeta flip */
+  .flip-card {
+    background-color: transparent;
+    width: 320px;
+    height: 350px;
+    perspective: 1000px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .flip-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .flip-card.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 10%;
+  }
+  
+  .flip-card-front {
+    background-color: #282c34;
+  }
+  
+  .flip-card-back {
+    background-color: #00000067;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-image {
+    width: 100%;
+    max-height: auto;
+  }
+  
+  /* Estilos del botón */
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #2980b9;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  /* Media Queries para hacerlo responsive */
+  @media (max-width: 1024px) {
+    .flip-card-container {
+      justify-content: center;
+    }
+  
+    .flip-card {
+      width: 250px; /* Reduce el tamaño de las tarjetas */
+      height: 300px;
+    }
+  
+    .flip-card-title {
+      font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flip-card-container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .flip-card {
+      width: 80%; /* Hace las tarjetas más grandes en pantallas más pequeñas */
+      height: 250px;
+      margin: 10px 0;
+    }
+  
+    .flip-card-title {
+      font-size: 1.8rem; /* Reduce el tamaño del título */
+      margin-top: 30px; /* Ajusta el margen superior */
+    }
+  
+    /* Hacemos que las tarjetas estén alineadas al centro */
+    .flip-card-container.visible {
+      opacity: 1;
+      transform: translateY(0);
+      margin: 0 20px; /* Añadimos márgenes laterales */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flip-card-container {
+      padding: 10px;
+    }
+  
+    .flip-card {
+      width: 100%; /* Las tarjetas ocuparán todo el ancho */
+      height: 250px;
+      margin: 10px 0;
+    }
+  
+    .flip-card-title {
+      font-size: 1.5rem; /* Reduce el tamaño del título */
+      margin-top: 20px; /* Ajusta el margen superior */
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 14px; /* Ajuste en el tamaño del botón */
+    }
+  }
+  

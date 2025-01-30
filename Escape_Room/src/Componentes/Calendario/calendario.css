@@ -1,0 +1,123 @@
+/* Estilos generales para el contenedor del calendario */
+.calendario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #495175; /* Fondo oscuro para un contraste atractivo */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px; /* Mayor tamaño para el calendario */
+  margin: 40px auto;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.calendario-container.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.calendario-container.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+
+/* Título principal en blanco */
+.tituloCalendario {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.tituloCalendario.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tituloCalendario.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.h2Titulo {
+  font-size: 2.8rem;
+  color: #fff; /* Título en blanco */
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #1da1f2;
+
+  
+}
+
+/* Estilo para el título dentro del calendario */
+.calendario-container h2 {
+  font-size: 1.5rem;
+  color: #fff; /* Título en blanco */
+  margin-bottom: 20px;
+  font-weight: 600;
+  
+}
+
+/* Estilos para el input del DatePicker */
+.datepicker-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #f39c12; /* Borde dorado para un toque elegante */
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.datepicker-input:focus {
+  border-color: #e67e22; /* Color más brillante cuando está en foco */
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.6); /* Resplandor dorado al enfoque */
+}
+
+/* Estilos para el texto que muestra la fecha seleccionada */
+.selected-date {
+  font-size: 1.2rem;
+  color: #05fc6c; /* Verde claro para indicar éxito */
+  margin-top: 15px;
+}
+
+/* Estilo para el contenedor cuando no hay fecha seleccionada */
+.selected-date:empty {
+  display: none;
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 480px) {
+  .calendario-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .h2Titulo {
+    font-size: 1.7rem;
+  }
+
+  .calendario-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .datepicker-input {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .selected-date {
+    font-size: 1rem;
+  }
+}

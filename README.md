@@ -24,7 +24,7 @@ npm create vite@latest Escape_Room
 2. Entra en el directorio del proyecto:
 
 ```bash
-cd Scape-Room
+cd Escape_Room
 ```
 
 3. Instala las dependencias:

@@ -1,0 +1,65 @@
+.galeria-wrapper {
+  text-align: center;
+  background-color: #282c34;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.galeria-wrapper.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.galeria-wrapper.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+
+.galeria-title {
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #1da1f2;
+
+}
+
+.galeria-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.galeria-image {
+  height: 550px; /* Ajusta la altura según sea necesario */
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0; /* Coloca la descripción en la parte inferior */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.607); /* Crea la capa opaca */
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 8px 8px; /* Solo redondea las esquinas inferiores */
+}
+
+.description-text {
+  font-size: 1.0em;
+  text-align: center;
+  margin: 0;
+}

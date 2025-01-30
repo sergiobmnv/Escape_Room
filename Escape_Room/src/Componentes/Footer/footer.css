@@ -1,0 +1,65 @@
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #181a1f; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 40px 20px; /* Espaciado interno */
+    font-family: 'Arial', sans-serif; /* Fuente */
+    height: auto;
+  }
+  
+  .footer-column {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    margin: 0 20px; /* Espaciado entre columnas */
+    
+  }
+  
+  .footer-logo {
+    max-width: 110px; /* Ancho máximo del logo */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 50%;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Espaciado entre iconos */
+  }
+  
+  .social-icon {
+    color: #ffffff; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave para el hover */
+  }
+  
+  .social-icon:hover {
+    color: #1da1f2; /* Color al pasar el mouse (ejemplo: azul de Twitter) */
+  }
+  
+  .footer-links {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+  }
+  
+  .footer-links li {
+    margin: 10px 0; /* Espaciado entre enlaces */
+  }
+  
+  .footer-links a {
+    color: #ffffff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para el hover */
+  }
+  
+  .footer-links a:hover {
+    color: #1da1f2; /* Color al pasar el mouse */
+  }
+  
+ .servicioYInformacio {
+    margin-bottom: 15px; /* Espaciado inferior para los títulos */
+    font-size: 18px; /* Tamaño de fuente para los títulos */
+    border-bottom: 2px solid #1da1f2; /* Línea inferior para los títulos */
+    padding-bottom: 5px; /* Espaciado inferior */
+    color: white;
+  }
