@@ -113,39 +113,27 @@
     z-index: -1; /* Asegura que el video esté detrás de cualquier otro contenido */
 }
 
+/* Aplica la animación al título */
 .hero-text {
+    animation: slideInFromLeft 1s ease-out forwards; /* Duración de 1 segundo, con una animación más suave */
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Ajusta el color del texto según el fondo */
-    font-size: 3rem; /* Ajusta según el diseño */
+    left: 25%; /* Mueve el título más a la izquierda (ajusta este valor según necesites) */
+    transform: translate(-50%, -50%); /* Asegura que esté centrado verticalmente */
+    color: white;
+    font-size: 3rem; /* Ajusta el tamaño del texto según lo necesites */
     z-index: 1;
+    letter-spacing: 2px; /* Añade un poco de espacio entre las letras */
 }
 
-/* Animación para que el título "resplandezca" */
-@keyframes glow {
+/* Define la animación de deslizamiento desde la izquierda */
+@keyframes slideInFromLeft {
     0% {
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgb(255, 255, 255);
-    }
-    50% {
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 1);
+        transform: translateX(-100%); /* Empuja el título completamente fuera de la pantalla por la izquierda */
+        opacity: 0; /* Hace que sea invisible al principio */
     }
     100% {
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgb(255, 255, 255);
+        transform: translateX(0); /* Mueve el título a su posición original */
+        opacity: 1; /* Lo hace completamente visible */
     }
 }
-
-/* Animación para el movimiento del texto */
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
