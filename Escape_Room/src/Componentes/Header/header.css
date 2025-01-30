@@ -96,51 +96,43 @@
     transform: scale(1.1); /* Efecto de ampliación en enlaces móviles */
 }
 
-/* Hero section */
 .hero {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    overflow: hidden; /* Asegura que el contenido no se desborde */
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* O ajusta según lo que necesites */
 }
 
-/* Estilo del video de fondo */
 .hero-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Hace que el video cubra toda el área sin distorsionarse */
-    z-index: -1; /* Coloca el video detrás del contenido */
+    object-fit: cover; /* Esto asegura que el video cubra todo el área */
+    z-index: -1; /* Asegura que el video esté detrás de cualquier otro contenido */
 }
 
-/* Estilo para el título */
-.hero-text .h1 {
-    font-size: 4rem; /* Tamaño de fuente grande */
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideIn 1.5s ease-out forwards, glow 1.5s ease-out infinite alternate; /* Efectos combinados */
-    letter-spacing: 2px; /* Espaciado entre letras */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ajusta el color del texto según el fondo */
+    font-size: 3rem; /* Ajusta según el diseño */
+    z-index: 1;
 }
 
 /* Animación para que el título "resplandezca" */
 @keyframes glow {
     0% {
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgb(255, 255, 255);
     }
     50% {
         text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 1);
     }
     100% {
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgb(255, 255, 255);
     }
 }
 
@@ -156,65 +148,4 @@
     }
 }
 
-/* Ajustes de fuente y tamaño en pantallas más pequeñas */
-@media (max-width: 1024px) {
-    .hero-text {
-        font-size: 3rem; /* Disminuir el tamaño en pantallas medianas */
-    }
-}
 
-@media (max-width: 768px) {
-    .hero-text {
-        font-size: 2rem; /* Ajustar aún más para dispositivos pequeños */
-        padding: 0 10px; /* Margen para que no toque los bordes */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text {
-        font-size: 1.5rem; /* Para pantallas extra pequeñas, como teléfonos móviles */
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-}
-
-/*_______________________________________________________________________________________________*/
-/* Responsive */
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    .nav-mobile.open {
-        display: flex;
-        top: 70px;
-    }
-
-    .hero-text {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        transition: background 0.3s ease, padding 0.3s ease;
-    }
-
-    .header.scrolled {
-        background: rgba(0, 0, 0, 0.95);
-        padding: 10px 20px;
-    }
-
-    /* Centrar los elementos en el menú móvil */
-    .nav-mobile {
-        top: 70px; /* Ajustar posición del menú móvil */
-    }
-
-    .nav-mobile .nav-link {
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-}
