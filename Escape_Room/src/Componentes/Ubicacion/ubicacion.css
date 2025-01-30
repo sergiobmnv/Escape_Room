@@ -114,23 +114,3 @@
   transform: scale(1.05);
 }
 
-/* Media queries */
-@media (max-width: 768px) {
-  .ubicacion-container {
-    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
-    padding: 15px;
-  }
-
-  .ubicacion-map {
-    height: 200px; /* Ajusta la altura del mapa en pantallas pequeñas */
-  }
-
-  .whatsapp-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .whatsapp-icon {
-    margin-bottom: 10px;
-  }
-}
