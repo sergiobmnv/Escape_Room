@@ -158,6 +158,50 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
+  /* Contenedor del botón para centrarlo */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Botón de regreso a la página principal */
+.back-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: 'Press Start 2P', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ffde59, #ff9900);
+  color: #000 !important; /* Solo afecta el botón */
+  border: 3px solid #ff9900;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(255, 153, 0, 0.5), 0 0 10px rgba(255, 222, 89, 0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Efecto hover */
+.back-button:hover {
+  background: linear-gradient(45deg, #ff9900, #ffde59);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 153, 0, 0.8);
+}
+
+/* Efecto de animación de brillo */
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px rgba(255, 222, 89, 0.8);
+  }
+  to {
+      box-shadow: 0 0 20px rgba(255, 153, 0, 1);
+  }
+}
+
+
   
   /* Ajustes responsivos para pantallas pequeñas */
   @media (max-width: 768px) {

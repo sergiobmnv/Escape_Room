@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             setScrolled(false);
         }
     };
-
+    
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {

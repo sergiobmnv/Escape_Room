@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './FlipCardGenerar.css';
 
 const LaTumbaImperial: React.FC = () => {
+      const navigate = useNavigate();
+
   return (
     <div className="template-container">
 
@@ -76,6 +79,13 @@ const LaTumbaImperial: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Botón de regreso a la página principal */}
+      <div className="button-container">
+        <button className="back-button" onClick={() => navigate('/')}>
+          Volver a la Página Principal
+        </button>
+      </div>
 
     </div>
   );

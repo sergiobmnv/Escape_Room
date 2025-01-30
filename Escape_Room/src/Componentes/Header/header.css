@@ -119,7 +119,7 @@
 }
 
 /* Estilo para el título */
-.hero-text {
+.hero-text .h1 {
     font-size: 4rem; /* Tamaño de fuente grande */
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);

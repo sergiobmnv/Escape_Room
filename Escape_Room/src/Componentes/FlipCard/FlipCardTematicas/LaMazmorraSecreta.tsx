@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './FlipCardGenerar.css';
 
 const LaMazmorraSecreta: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="template-container">
-
       {/* Encabezado con logo */}
       <section className="template-header">
         <div className="template-header-content">
@@ -21,8 +23,8 @@ const LaMazmorraSecreta: React.FC = () => {
       <section className="template-description">
         <h2>Sobre nosotros</h2>
         <p>
-          Bienvenido a nuestro Escape Room. Disfruta de una experiencia única 
-          que mezcla enigmas, diversión y aventura. Reúne a tu equipo y prepárate 
+          Bienvenido a nuestro Escape Room. Disfruta de una experiencia única
+          que mezcla enigmas, diversión y aventura. Reúne a tu equipo y prepárate
           para superar desafíos inolvidables. ¡Te esperamos!
         </p>
       </section>
@@ -35,7 +37,7 @@ const LaMazmorraSecreta: React.FC = () => {
             <img src="/FondoMedievalCarrusel-2.jpg" alt="Mazmorra Secreta" />
             <h3>La Mazmorra Secreta</h3>
             <p>
-              Adéntrate en antiguas mazmorras llenas de misterios y resuelve acertijos 
+              Adéntrate en antiguas mazmorras llenas de misterios y resuelve acertijos
               ancestrales para descubrir los secretos mejor guardados.
             </p>
           </div>
@@ -43,7 +45,7 @@ const LaMazmorraSecreta: React.FC = () => {
             <img src="/FondoMedievalCarrusel-3.jpg" alt="Castillo Olvidado" />
             <h3>El Castillo Olvidado</h3>
             <p>
-              Explora castillos medievales, enfréntate a pruebas de ingenio y vive una 
+              Explora castillos medievales, enfréntate a pruebas de ingenio y vive una
               experiencia llena de desafíos épicos.
             </p>
           </div>
@@ -76,6 +78,14 @@ const LaMazmorraSecreta: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Botón de regreso a la página principal */}
+      <div className="button-container">
+        <button className="back-button" onClick={() => navigate('/')}>
+          Volver a la Página Principal
+        </button>
+      </div>
+      
     </div>
   );
 };
