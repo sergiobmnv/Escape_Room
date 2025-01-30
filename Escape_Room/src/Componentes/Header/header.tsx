@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
                     {/* Navigation */}
                     <nav className="nav">
-                        <ScrollLink to="viajesEnElTiempo" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Viajes en el tiempo</ScrollLink>
+                        <ScrollLink to="viajeEnElTiempo" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Viajes en el tiempo</ScrollLink>
                         <ScrollLink to="calendario" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Reserva ya</ScrollLink>
                         <ScrollLink to="resenias" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Reseñas</ScrollLink>
                         <ScrollLink to="galeria" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Galeria</ScrollLink>
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
 
                     {/* Menú móvil */}
                     <nav className={`nav-mobile ${menuOpen ? 'open' : ''}`}>
-                        <ScrollLink to="viajesEnElTiempo" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Viajes en el tiempo</ScrollLink>
+                        <ScrollLink to="viajeEnElTiempo" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Viajes en el tiempo</ScrollLink>
                         <ScrollLink to="calendario" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Reserva ya</ScrollLink>
                         <ScrollLink to="resenias" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Reseñas</ScrollLink>
                         <ScrollLink to="galeria" smooth={true} duration={1000} className="nav-link" onClick={cerrarMenu}>Galeria</ScrollLink>

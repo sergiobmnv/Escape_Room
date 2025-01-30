@@ -7,8 +7,9 @@
     opacity: 0;
     transform: translateY(20px);
     transition: transform 0.5s ease, opacity 0.5s ease;
-    padding: 20px;
+    padding: 70px;
     box-sizing: border-box;
+    
   }
   
   .flip-card-title {
