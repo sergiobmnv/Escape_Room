@@ -10,6 +10,7 @@
   width: auto;
   transform: translateY(20px);
   transition: transform 0.5s ease, opacity 0.5s ease;
+  gap: 20px;
 }
 
 .ubicacion-container.visible{
