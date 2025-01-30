@@ -127,11 +127,7 @@ A continuación se detallan las funcionalidades completadas del proyecto:
 
 ## 📝 Objetivos y Nuevas Funcionalidades
 
-### 1. **Requisitos del Cliente**
-- [ ] **Página Principal:**
-  - Implementar un **carrusel** con varias imágenes y un botón que redirija a las secciones correspondientes.
-
-### 2. **Mejoras Pendientes**
+###  **Mejoras Pendientes**
 - [ ] **Responsive Design:**
   - Asegurar que el proyecto sea completamente responsivo y compatible con dispositivos móviles y tabletas.
   

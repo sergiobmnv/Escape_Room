@@ -71,7 +71,10 @@ const Header: React.FC = () => {
 
                 {/* Hero */}
                 <div className="hero">
-                    <h1 className="hero-text">Aventurate a nuetro Escape Room</h1>
+                    <video autoPlay loop muted className="hero-video">
+                        <source src="Video-Fondo.mp4" type="video/mp4" />
+                    </video>
+                    <h1 className="hero-text">Aventurate a nuestro Escape Room</h1>
                 </div>
             </Element>
         </>

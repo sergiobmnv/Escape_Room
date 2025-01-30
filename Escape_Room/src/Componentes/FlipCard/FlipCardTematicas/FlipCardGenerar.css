@@ -2,10 +2,11 @@
 .template-container {
     color: white;
     font-family: 'Press Start 2P', sans-serif;
+    padding: 170px;
     text-align: center;
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
-    height: 100%; /* Altura del contenedor igual a la ventana visible */
+    height: auto; /* Altura del contenedor igual a la ventana visible */
     width: 100%; /* Ancho del contenedor igual a la ventana visible */
   }
   
