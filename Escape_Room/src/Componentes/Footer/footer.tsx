@@ -50,8 +50,8 @@ const Footer: React.FC = () => {
       <div className="footer-column">
         <h3 className="servicioYInformacio">Información Legal</h3>
         <ul className="footer-links">
-          <li><Link to="/legal-notice">Aviso Legal</Link></li>
-          <li><Link to="/privacidad">Política de Privacidad</Link></li>
+          <li><Link to="/Legal-notice">Aviso Legal</Link></li>
+          <li><Link to="/Privacidad">Política de Privacidad</Link></li>
           <li><Link to="/cookies">Política de Cookies</Link></li>
         </ul>
       </div>
