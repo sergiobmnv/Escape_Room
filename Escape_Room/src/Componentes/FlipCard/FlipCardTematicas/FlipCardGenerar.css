@@ -1,165 +1,171 @@
 /* Contenedor principal */
 .template-container {
-    color: white;
-    font-family: 'Press Start 2P', sans-serif;
-    padding: 170px;
-    text-align: center;
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
-    height: auto; /* Altura del contenedor igual a la ventana visible */
-    width: 100%; /* Ancho del contenedor igual a la ventana visible */
-  }
-  
-  /* Encabezado */
-  .template-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .template-logo {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .template-header-content h3 {
-    font-size: 45px;
-    margin: 30px 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffde59;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  .template-header h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #ffde59;
-  }
-  
-  /* Slogan */
-  .template-slogan {
-    font-size: 28px;
-    margin: 30px 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffde59;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* Descripción principal */
-  .template-description {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: #330062;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-  }
-  
-  /* Secciones con diseño cuadrado */
-  .template-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #1a0036;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-  }
-  
-  .template-section h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #ffde59;
-  }
-  
-  .template-section p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0 20px;
-  }
-  
-  /* Sección de imágenes dentro de la sección de actividades */
-  .template-images {
-    display: flex;
-    justify-content: space-evenly; /* Distribuye las imágenes equidistantemente */
-    flex-wrap: wrap; /* Asegura que las imágenes se adapten si es necesario */
-    margin-top: 20px;
-    background-color: #1a0036;
-    padding: 20px;
-    border-radius: 15px;
-  }
-  
-  /* Ajuste de tamaño y estilo de las imágenes */
-  .template-image img {
-    width: 100%;
-    max-width: 300px; /* Tamaño máximo de las imágenes */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Sección adicional */
-  .template-extra-section {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #1a0036;
-    border-radius: 15px;
-  }
-  
-  .template-extra-section h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #ffde59;
-  }
-  
-  .template-extra-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .template-extra-card {
-    background-color: #330062;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .template-extra-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-  }
-  
-  .template-extra-card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  
-  .template-extra-card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .template-extra-card p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 0; /* Eliminar padding para evitar scroll */
+  text-align: center;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+  height: auto; /* Altura del contenedor igual a la ventana visible */
+  width: 100%; /* Ancho del contenedor igual a la ventana visible */
+  max-width: 100%; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+}
 
-  /* Contenedor del botón para centrarlo */
+/* Encabezado */
+.template-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.template-logo {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.template-header-content h3 {
+  font-size: 45px;
+  margin: 30px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffde59;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.template-header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #ffde59;
+}
+
+/* Slogan */
+.template-slogan {
+  font-size: 28px;
+  margin: 30px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffde59;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Descripción principal */
+.template-description {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #330062;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Secciones con diseño cuadrado */
+.template-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #1a0036;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Ajustes para centrar el contenido de las secciones */
+.template-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffde59;
+  text-align: center; /* Centrar el texto */
+}
+
+.template-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  text-align: center; /* Centrar el texto */
+}
+
+/* Sección de imágenes dentro de la sección de actividades */
+.template-images {
+  display: flex;
+  justify-content: center; /* Centrar las imágenes */
+  flex-wrap: wrap; /* Asegura que las imágenes se adapten si es necesario */
+  margin-top: 20px;
+  background-color: #1a0036;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Ajuste de tamaño y estilo de las imágenes */
+.template-image img {
+  width: 100%;
+  
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección adicional */
+.template-extra-section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #1a0036;
+  border-radius: 15px;
+}
+
+.template-extra-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffde59;
+  text-align: center; /* Centrar el texto */
+}
+
+.template-extra-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.template-extra-card {
+  background-color: #330062;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.template-extra-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.template-extra-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.template-extra-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.template-extra-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Contenedor del botón para centrarlo */
 .button-container {
   display: flex;
   justify-content: center;
@@ -201,18 +207,27 @@
   }
 }
 
-
-  
-  /* Ajustes responsivos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    /* Ajustar las imágenes de la sección */
-    .template-images {
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajustar las imágenes de la sección */
+  .template-images {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .template-image img {
-      max-width: 90%; /* Ajustar el tamaño de las imágenes a un 90% en pantallas pequeñas */
-    }
   }
-  
+
+  .template-image img {
+      max-width: 90%; /* Ajustar el tamaño de las imágenes a un 90% en pantallas pequeñas */
+  }
+
+  .template-container {
+      padding: 50px; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  .template-description {
+      padding: 15px; /* Reducir el padding de la descripción */
+  }
+
+  .template-extra-card {
+      width: 90%; /* Hacer las tarjetas más anchas en pantallas pequeñas */
+  }
+}
