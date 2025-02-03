@@ -93,12 +93,11 @@ A continuación se detallan las funcionalidades completadas del proyecto:
   - [x] Usar el icono definitivo para el preloader.
 
 - **Header**
-  - [x] El logo redirige a la parte superior de la página.
   - [x] Los enlaces del menú redirigen a las secciones correspondientes.
   - [x] Cambiar el fondo del header al hacer scroll.
   - [x] Subrayar los enlaces al hacer hover.
-  - [x] Menú hamburguesa en la versión móvil.
-  - [x] En versión móvil, al hacer clic en los enlaces, se redirige y se cierra el menú.
+  - [] Menú hamburguesa en la versión móvil.
+  - [] En versión móvil, al hacer clic en los enlaces, se redirige y se cierra el menú.
 
 - **Señas de Identidad**
   - [x] Implementar Lazy Loading para títulos y tarjetas.
