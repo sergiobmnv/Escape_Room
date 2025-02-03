@@ -4,6 +4,8 @@ import './cookieBaner.css';
 const CookieBanner: React.FC = () => {
     const [isVisible, setVisible] = useState(true);
     const [showCookieIcon, setShowCookieIcon] = useState(false);
+    const [language] = useState('es'); // Idioma por defecto
+    const [marketingAccepted] = useState(false); // Consentimiento de marketing
 
     const aceptarCookies = () => {
         setVisible(false);
@@ -15,8 +17,8 @@ const CookieBanner: React.FC = () => {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     const { latitude, longitude } = position.coords;
-                    // Definir la cookie correctamente
-                    const locationCookie = `userLocation=${latitude},${longitude}; path=/; max-age=604800`; // Expira en 7 días
+                    // Definir la cookie de ubicación
+                    const locationCookie = `userLocation=${latitude},${longitude}; path=/; max-age=604800`;
                     document.cookie = locationCookie;
                     console.log("Ubicación almacenada como cookie:", locationCookie);
                 },
@@ -27,6 +29,16 @@ const CookieBanner: React.FC = () => {
         } else {
             console.warn("La geolocalización no está soportada por este navegador.");
         }
+
+        // Establecer cookie de idioma
+        const languageCookie = `preferredLanguage=${language}; path=/; max-age=604800`;
+        document.cookie = languageCookie;
+        console.log("Idioma almacenado como cookie:", languageCookie);
+
+        // Establecer cookie de marketing
+        const marketingCookie = `marketingAccepted=${marketingAccepted}; path=/; max-age=604800`;
+        document.cookie = marketingCookie;
+        console.log("Consentimiento de marketing almacenado como cookie:", marketingCookie);
     };
 
     const rechazarCookies = () => {

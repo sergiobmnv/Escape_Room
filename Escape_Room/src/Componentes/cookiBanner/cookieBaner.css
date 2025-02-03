@@ -6,94 +6,116 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #2c2525;
-    border: 1px solid #ddd;
-    border-radius: 16px;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #2c2525; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 16px; /* Bordes redondeados */
+    padding: 1.5rem 2rem; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 100000;
-    max-width: 90%;
-    width: 1000px;
-    height: 220px;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    z-index: 100000; /* Asegura que el banner esté por encima de otros elementos */
+    max-width: 90%; /* Ancho máximo del banner */
+    width: 1000px; /* Ancho fijo */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    min-height: 220px; /* Altura mínima */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
 }
 
 .titulo {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #d1a5a5;
-    text-align: center;
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Negrita */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centra el texto */
 }
 
 .texto {
-    font-size: 1.00rem;
-    color: #d1a5a5;
-    margin-bottom: 1rem;
-    text-align: center;
-    line-height: 1.5;
+    font-size: 1rem; /* Tamaño de fuente */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    text-align: center; /* Centra el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
 }
 
+.language-selection {
+    margin-bottom: 1rem; /* Espaciado inferior para la selección de idioma */
+}
+
+.language-selection button {
+    margin: 0 0.5rem; /* Espaciado lateral entre botones de idioma */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.language-selection button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos de los botones de cookies */
 .cookie-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; /* Espaciado entre botones */
 }
 
 .cookie-button {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    padding: 0.7rem 1.5rem; /* Espaciado interno */
+    font-size: 0.95rem; /* Tamaño de fuente */
+    font-weight: 500; /* Peso de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
 }
 
 .cookie-button.aceptar {
-    background-color: #28a745;
-    color: #ffffff;
+    background-color: #28a745; /* Color de fondo para aceptar */
+    color: #ffffff; /* Color del texto */
 }
 
 .cookie-button.rechazar {
-    background-color: #dc3545;
-    color: #ffffff;
+    background-color: #dc3545; /* Color de fondo para rechazar */
+    color: #ffffff; /* Color del texto */
 }
 
 .cookie-button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
 }
 
 .cookie-button.aceptar:hover {
-    background-color: #218838;
+    background-color: #218838; /* Color de fondo al pasar el ratón para aceptar */
 }
 
 .cookie-button.rechazar:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Color de fondo al pasar el ratón para rechazar */
 }
 
 /* Estilos del ícono de galleta */
 .cookie-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #5938ab;
-    border: 2px solid #e46c0a;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    z-index: 800;
+    bottom: 20px; /* Posición desde el fondo */
+    right: 20px; /* Posición desde la derecha */
+    background-color: #5938ab; /* Color de fondo */
+    border: 2px solid #e46c0a; /* Borde */
+    border-radius: 50%; /* Forma circular */
+    width: 50px; /* Ancho */    height: 50px; /* Altura */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-size: 1.5rem; /* Tamaño de la fuente del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    z-index: 800; /* Asegura que el ícono esté por encima de otros elementos */
 }
 
 .cookie-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
 }
+
