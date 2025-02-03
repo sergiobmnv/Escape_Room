@@ -7,7 +7,7 @@ Este proyecto es una página web para un Escape Room, donde los usuarios pueden 
 
 Puedes ver el proyecto en vivo a través de Vercel:
 
-[**Ver Proyecto**](https://proyecto-escape-room.vercel.app/)
+[**Ver Proyecto**](https://escape-room-ten-taupe.vercel.app/)
 
 ## ⚙️ Requisitos y Configuración del Proyecto
 
